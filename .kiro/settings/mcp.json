@@ -2,7 +2,24 @@
   "mcpServers": {
     "onechain": {
       "type": "sse",
-      "url": "https://onechain-mcp-production.up.railway.app/sse"
+      "url": "https://onechain-mcp-production.up.railway.app/sse",
+      "autoApprove": [
+        "get_chain_id",
+        "get_reference_gas_price",
+        "get_latest_checkpoint",
+        "get_validators",
+        "get_balance",
+        "get_all_balances",
+        "get_coins",
+        "get_owned_objects",
+        "get_stakes",
+        "get_transaction_history",
+        "get_object",
+        "get_transaction",
+        "get_transaction_signatures",
+        "get_move_function",
+        "query_events"
+      ]
     }
   }
 }
